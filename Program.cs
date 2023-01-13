@@ -9,6 +9,11 @@ public static class Program
             Console.WriteLine("데이터가 입력되지 않았습니다.");
             return;
         }
+        else if (args.Length == 1)
+        {
+            Console.WriteLine("2개 이상의 데이터를 입력하세요.");
+            return;
+        }
 
         double[] s = new double[args.Length];
         for (int i = 0; i < s.Length; i++)
