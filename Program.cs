@@ -4,6 +4,12 @@ public static class Program
 {
     public static void Main(string[] args)
     {
+        if (args.Length == 0) 
+        {
+            Console.WriteLine("데이터가 입력되지 않았습니다.");
+            return;
+        }
+
         double[] s = new double[args.Length];
         for (int i = 0; i < s.Length; i++)
         {
